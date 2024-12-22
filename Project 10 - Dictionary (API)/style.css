@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(./wallpaperflare.com_wallpaper.jpg);
+
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    width: 50%;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px white;
+}
+
+.search-bar{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-word{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.search-word input{
+    padding: 0.8rem 0;
+    margin-top: 1rem;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 200;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    font-size: 1rem;
+    background: transparent;
+}
+
+.result{
+    width: 80%;
+    margin-top: 1.5rem;
+}
+
+.result h3 p{
+    width: 100%;
+    display: flex;
+    
+}
+
+.audio-btn{
+    margin-left: 3rem;
+    float: right;
+}
+
+.audio-btn button{
+    padding: 0.5rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.word{
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 0.5rem 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.meaning{
+    font-size: 1.1rem;
+    text-align: left;
+    padding: 0.5rem 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.result{
+    display: none;
+}
+

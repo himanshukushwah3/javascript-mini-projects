@@ -1,0 +1,53 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    margin-bottom: 5rem;
+    animation:  changeColor 5s infinite alternate;
+}
+
+p{
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+button{
+    padding: 16px 20px;
+    background-color: blue;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+@keyframes changeColor{
+    0%{
+        color: indigo;
+    }
+    20%{
+        color: blue;
+    }
+    40%{
+        color: green;
+    }
+    60%{
+        color: orange;
+    }
+    80%{
+        color: yellow;
+    }
+    100%{
+        color: red;
+    }
+}

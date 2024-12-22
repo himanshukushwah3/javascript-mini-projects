@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: #d6f0fa;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.container .color{
+    background-color: #fff;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
+    margin: 13px;
+    padding: 7px;
+    border-radius: 6px;
+    border: 1px solid black;
+    transition: transform 0.3s ease;
+}
+
+.container .color:active{
+    transform: scale(0.95);
+}
+
+.color .rect-box{
+    width: 185px;
+    height: 188px;
+    background-color: #8A6CFF;
+    border-radius: 5px;
+}
+
+.color .rect-box:hover{
+    filter: brightness(106%);
+}
+
+.color .color-value{
+    display: block;
+    color: #444;
+    margin: 12px 0 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.refresh-btn{
+    margin: 40px;
+    outline: none;
+    columns: #fff;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 12px 20px;
+    background-color: #8A6CFF;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 510) {
+    .container{
+        margin: 10px;
+    }
+    .container .color{
+        margin: 8px;
+        padding: 5px;
+    }
+    .color .rect-box{
+        width: 145px;
+        height: 148px;
+    }
+    .color .color-value{
+        font-size: 1rem;
+    }
+}

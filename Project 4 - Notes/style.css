@@ -1,0 +1,62 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#section-body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #686de0;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5rem;
+}
+
+#add-note{
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    background-color: #535c68;
+    color: white;
+    padding: 1rem;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.note{
+    width: 400px;
+    height: 400px;
+    background-color: #f0932b;
+    margin: 5rem 1rem 1rem 1rem;
+}
+
+.tool{
+    width: 100%;
+    background-color: #535c68;
+    color: white;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: end;
+}
+
+.tool i{
+    padding: 5px;
+    cursor: pointer;
+}
+
+.note textarea{
+    width: 100%;
+    height: 100%;
+    resize: none;
+    border: none;
+    background-color: #f0932b;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.note textarea:focus{
+    outline: none;
+}
